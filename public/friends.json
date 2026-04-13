@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "Sarah Chen",
+    "picture": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80",
+    "email": "sarah.chen@techmail.com",
+    "days_since_contact": 25,
+    "status": "overdue",
+    "tags": ["college", "hiking"],
+    "bio": "Study buddy from CS 101. Now working as a Senior Dev. We usually meet for dim sum or local trail runs.",
+    "goal": 14,
+    "next_due_date": "2026-04-10"
+  },
+  {
+    "id": 2,
+    "name": "Marcus Thompson",
+    "picture": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e",
+    "email": "m.thompson88@gmail.com",
+    "days_since_contact": 3,
+    "status": "on-track",
+    "tags": ["childhood", "gaming"],
+    "bio": "Grew up in the same neighborhood. Enthusiastic about retro consoles and indie games. We talk weekly.",
+    "goal": 7,
+    "next_due_date": "2026-04-17"
+  },
+  {
+    "id": 3,
+    "name": "Elena Rodriguez",
+    "picture": "https://images.unsplash.com/photo-1544005313-94ddf0286df2",
+    "email": "elena.rod@creative-agency.com",
+    "days_since_contact": 28,
+    "status": "almost due",
+    "tags": ["work", "photography"],
+    "bio": "Former colleague from the design agency. She has a great eye for street photography. Need to catch up on her latest gallery.",
+    "goal": 30,
+    "next_due_date": "2026-04-15"
+  },
+  {
+    "id": 4,
+    "name": "James Wilson",
+    "picture": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e",
+    "email": "jwilson.architect@outlook.com",
+    "days_since_contact": 15,
+    "status": "overdue",
+    "tags": ["gym", "neighbor"],
+    "bio": "Lives two doors down. We bonded over lifting weights and urban planning. Great guy to grab a coffee with.",
+    "goal": 10,
+    "next_due_date": "2026-04-08"
+  },
+  {
+    "id": 5,
+    "name": "Priya Sharma",
+    "picture": "https://images.unsplash.com/photo-1534751516642-a1af1ef26a56",
+    "email": "priya.designs@webflow.io",
+    "days_since_contact": 45,
+    "status": "on-track",
+    "tags": ["travel", "close friend"],
+    "bio": "Traveled through Southeast Asia together in 2019. We share a long-distance friendship and chat every few months.",
+    "goal": 60,
+    "next_due_date": "2026-05-28"
+  },
+  {
+    "id": 6,
+    "name": "David Park",
+    "picture": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d",
+    "email": "dpark.music@vibe.fm",
+    "days_since_contact": 12,
+    "status": "almost due",
+    "tags": ["music", "college"],
+    "bio": "Lead guitarist in our old college band. Still composes soundtracks. We try to check in every two weeks.",
+    "goal": 14,
+    "next_due_date": "2026-04-15"
+  },
+  {
+    "id": 7,
+    "name": "Chloe Baker",
+    "picture": "https://images.unsplash.com/photo-1494790108377-be9c29b29330",
+    "email": "chloe.bakes@bakerynet.com",
+    "days_since_contact": 5,
+    "status": "on-track",
+    "tags": ["cooking", "local"],
+    "bio": "Met at a sourdough workshop. She gives the best baking advice. We exchange recipes frequently.",
+    "goal": 21,
+    "next_due_date": "2026-04-21"
+  },
+  {
+    "id": 8,
+    "name": "Samira Haddad",
+    "picture": "https://images.unsplash.com/photo-1531123897727-8f129e1688ce",
+    "email": "shaddad.legal@firm.com",
+    "days_since_contact": 85,
+    "status": "overdue",
+    "tags": ["mentorship", "professional"],
+    "bio": "My first manager. She taught me everything about project management. We usually meet for lunch once a quarter.",
+    "goal": 90,
+    "next_due_date": "2026-04-10"
+  },
+  {
+    "id": 9,
+    "name": "Leo Vance",
+    "picture": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d",
+    "email": "leo.vance@startup.io",
+    "days_since_contact": 6,
+    "status": "on-track",
+    "tags": ["startup", "tennis"],
+    "bio": "Co-founder of a local fintech startup. We play tennis on Sunday mornings when the weather allows.",
+    "goal": 7,
+    "next_due_date": "2026-04-14"
+  },
+  {
+    "id": 10,
+    "name": "Maya Okafor",
+    "picture": "https://images.unsplash.com/photo-1531427186611-ecfd6d936c79",
+    "email": "m.okafor@writer.com",
+    "days_since_contact": 19,
+    "status": "almost due",
+    "tags": ["book club", "university"],
+    "bio": "Met in an English Lit seminar. She's now a freelance journalist. We share book recommendations monthly.",
+    "goal": 21,
+    "next_due_date": "2026-04-15"
+  }
+]

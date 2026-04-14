@@ -9,7 +9,7 @@
     "tags": ["college", "close friend"],
     "bio": "Met during our computer science program at university. We used to pull all-nighters coding together and still share tech news and career advice.",
     "goal": 14,
-    "next_due_date": "2025-04-25"
+    "next_due_date": "2026-04-10"
   },
   {
     "id": 2,
@@ -21,7 +21,7 @@
     "tags": ["work", "gym buddy"],
     "bio": "Colleague from my first job. We started going to the gym together after work and now motivate each other to stay consistent with fitness.",
     "goal": 10,
-    "next_due_date": "2025-04-20"
+    "next_due_date": "2026-04-19"
   },
   {
     "id": 3,
@@ -33,7 +33,7 @@
     "tags": ["book club", "childhood"],
     "bio": "My oldest friend from elementary school. We bonded over Harry Potter and still meet monthly for our little book club.",
     "goal": 21,
-    "next_due_date": "2025-04-22"
+    "next_due_date": "2026-04-23"
   },
   {
     "id": 4,
@@ -45,7 +45,7 @@
     "tags": ["high school", "music"],
     "bio": "High school band mate. We played in a garage band for years and still share new music discoveries.",
     "goal": 14,
-    "next_due_date": "2025-04-18"
+    "": "2026-04-03"
   },
   {
     "id": 5,
@@ -53,11 +53,11 @@
     "picture": "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=300",
     "email": "priya.sharma.design@gmail.com",
     "days_since_contact": 8,
-    "status": "on-track",
+    "status": "overdue",
     "tags": ["neighbor", "close friend"],
     "bio": "My neighbor who became family. We cook together almost every weekend and share everything from work stress to travel plans.",
     "goal": 7,
-    "next_due_date": "2025-04-21"
+    "next_due_date": "2026-04-13"
   },
   {
     "id": 6,
@@ -69,7 +69,7 @@
     "tags": ["gaming", "college"],
     "bio": "Met in freshman year dorm. We've been gaming together for over 8 years — still my go-to for virtual adventures.",
     "goal": 10,
-    "next_due_date": "2025-04-19"
+    "next_due_date": "2026-04-21"
   },
   {
     "id": 7,
@@ -81,7 +81,7 @@
     "tags": ["travel", "work"],
     "bio": "Met during a work trip to Dubai. We explored the city together and keep planning our next adventure.",
     "goal": 14,
-    "next_due_date": "2025-04-23"
+    "next_due_date": "2026-04-13"
   },
   {
     "id": 8,
@@ -93,7 +93,7 @@
     "tags": ["family friend", "sports"],
     "bio": "Grew up playing soccer in the same neighborhood. Our families are very close and we catch games together.",
     "goal": 30,
-    "next_due_date": "2025-04-28"
+    "next_due_date": "2026-04-14"
   },
   {
     "id": 9,
@@ -105,7 +105,7 @@
     "tags": ["art", "travel buddy"],
     "bio": "Met at a painting workshop in Paris. We love visiting galleries and museums together whenever we get the chance.",
     "goal": 12,
-    "next_due_date": "2025-04-20"
+    "next_due_date": "2026-04-17"
   },
   {
     "id": 10,
@@ -117,6 +117,6 @@
     "tags": ["coding", "friend"],
     "bio": "Fellow developer I met at a hackathon. We still debug each other's code and talk about the latest tech trends.",
     "goal": 14,
-    "next_due_date": "2025-04-27"
+    "next_due_date": "2026-04-07"
   }
 ]

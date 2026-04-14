@@ -1,11 +1,78 @@
-import React from 'react';
+import RightSide from "@/components/FriendDetailsPage/RightSide";
+import BannerCard from "@/components/ui/BannerCard";
+import getFriends from "@/utils/getFriends";
+import React from "react";
+import { LuMessageSquareText, LuPhone, LuVideo } from "react-icons/lu";
 
-const FriendDetailsPage = () => {
-    return (
-        <div>
-            friend details
+const FriendDetailsPage = async ({ params }) => {
+  const { id } = await params;
+  const friends = await getFriends();
+  const friend = friends.find((fd) => fd.id === Number(id));
+
+  const rightTopCardItems = [
+    {
+      num: friend.days_since_contact,
+      text: "Days Since Contact",
+    },
+    {
+      num: friend.goal,
+      text: "Goal (Days)",
+    },
+    {
+      num: friend.next_due_date,
+      text: "Next Due",
+    },
+  ];
+
+  return (
+    <div className="max-w-325  w-[95%] sm:w-10/12 mx-auto grid grid-cols-3 my-10 gap-5">
+      <div className="col-span-1">
+        <RightSide friend={friend}></RightSide>
+      </div>
+      <div className="col-span-2">
+        <div className="grid grid-cols-3 gap-3">
+          {rightTopCardItems.map((item, ind) => (
+            <BannerCard key={ind} num={item.num} text={item.text}></BannerCard>
+          ))}
         </div>
-    );
+        <div className="p-6 shadow-sm rounded-xl mt-5">
+          <div>
+            <div className="flex justify-between items-center">
+              <h2 className="text-[#2d4a43] font-bold">Relationship Goal</h2>
+              <button className="btn">Edit</button>
+            </div>
+            <p className="text-gray-500">
+              Connect every{" "}
+              <span className="font-bold text-slate-800">
+                {friend.goal} days
+              </span>
+            </p>
+          </div>
+        </div>
+        <div className="space-y-4 mt-6 p-5 shadow-sm bg-white rounded-2xl">
+          <h2 className="text-[#2d4a43] font-bold text-lg">Quick Check-In</h2>
+
+          <div className="grid grid-cols-3 gap-4 ">
+            <button className="btn w-full h-auto flex flex-col p-6 bg-gray-100 shadow-sm rounded-2xl">
+              <LuPhone className="text-2xl text-gray-500" />
+
+              <p className="text-gray-500 font-medium">Call</p>
+            </button>
+
+            <button className="btn w-full h-auto flex flex-col p-6 bg-gray-100 shadow-sm rounded-2xl">
+              <LuMessageSquareText className="text-2xl text-gray-500" />
+              <span className="text-gray-500 font-medium">Text</span>
+            </button>
+
+            <button className="btn w-full h-auto flex flex-col p-6 bg-gray-100 shadow-sm rounded-2xl">
+              <LuVideo className="text-2xl text-gray-500" />
+              <span className="text-gray-500 font-medium">Video</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default FriendDetailsPage;

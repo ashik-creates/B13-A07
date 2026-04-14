@@ -1,3 +1,4 @@
+import CheckInBtn from "@/components/FriendDetailsPage/CheckInBtn";
 import RightSide from "@/components/FriendDetailsPage/RightSide";
 import BannerCard from "@/components/ui/BannerCard";
 import getFriends from "@/utils/getFriends";
@@ -22,6 +23,12 @@ const FriendDetailsPage = async ({ params }) => {
       num: friend.next_due_date,
       text: "Next Due",
     },
+  ];
+
+  const checkInOptions = [
+    { label: "Call", icon: <LuPhone /> },
+    { label: "Text", icon: <LuMessageSquareText /> },
+    { label: "Video", icon: <LuVideo /> },
   ];
 
   return (
@@ -53,21 +60,7 @@ const FriendDetailsPage = async ({ params }) => {
           <h2 className="text-[#2d4a43] font-bold text-lg">Quick Check-In</h2>
 
           <div className="grid grid-cols-3 gap-4 ">
-            <button className="btn w-full h-auto flex flex-col p-6 bg-gray-100 shadow-sm rounded-2xl">
-              <LuPhone className="text-2xl text-gray-500" />
-
-              <p className="text-gray-500 font-medium">Call</p>
-            </button>
-
-            <button className="btn w-full h-auto flex flex-col p-6 bg-gray-100 shadow-sm rounded-2xl">
-              <LuMessageSquareText className="text-2xl text-gray-500" />
-              <span className="text-gray-500 font-medium">Text</span>
-            </button>
-
-            <button className="btn w-full h-auto flex flex-col p-6 bg-gray-100 shadow-sm rounded-2xl">
-              <LuVideo className="text-2xl text-gray-500" />
-              <span className="text-gray-500 font-medium">Video</span>
-            </button>
+            {checkInOptions.map((item, ind)=> <CheckInBtn key={ind} item={item} friend={friend}></CheckInBtn>)}
           </div>
         </div>
       </div>

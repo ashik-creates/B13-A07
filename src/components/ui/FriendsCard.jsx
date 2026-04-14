@@ -14,7 +14,7 @@ const FriendsCard = ({friend}) => {
                     {friend.days_since_contact}d ago
                 </p>
                 <div className="flex justify-center items-center gap-2 flex-wrap">
-                    {friend.tags.map((item, ind)=> <span className="badge text-green-500 bg-green-100 rounded-3xl font-medium" key={ind}>{item.toUpperCase()}</span>)}
+                    {friend.tags.map((item, ind)=> <span className="badge text-green-500 text-xs bg-green-100 rounded-3xl font-medium" key={ind}>{item.toUpperCase()}</span>)}
                 </div>
                 <span className={`capitalize ${friend.status === "overdue" ? "badge text-white bg-red-600 rounded-3xl" : friend.status === "almost due"? "badge text-white bg-yellow-600 rounded-3xl": "badge text-white bg-green-600 rounded-3xl" }`}>
                     {friend.status}

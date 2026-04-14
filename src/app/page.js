@@ -1,10 +1,12 @@
+import AllFriends from "@/components/homepage/AllFriends";
 import Banner from "@/components/homepage/Banner";
 import Image from "next/image";
 
 export default function Home() {
   return (
     <>
-      <Banner/> 
+      <Banner/>
+      <AllFriends/> 
     </>
   );
 }

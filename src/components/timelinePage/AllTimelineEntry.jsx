@@ -31,7 +31,7 @@ const AllTimelineEntry = () => {
       </div>
       <div className="mt-10">
         {filteredArray().length === 0 ? (
-          <p>Timeline is empty</p>
+          <p className="text-center bg-white p-7 shadow-sm rounded-xl  text-2xl font-semibold text-gray-400">Timeline is empty</p>
         ) : (
           filteredArray().map((item, ind) => (
             <TimelineCard key={ind} item={item}></TimelineCard>

@@ -31,7 +31,8 @@ const RightSide = ({friend}) => {
               </span>
             ))}
           </div>
-          <p className="text-gray-500 text-center">{friend.bio}</p>
+          <p className="text-gray-500 text-center italic">{`"${friend.bio}"`}</p>
+          <p className="text-center text-gray-500">{friend.email}</p>
         </div>
       </div>
       <div className="py-5 space-y-3">

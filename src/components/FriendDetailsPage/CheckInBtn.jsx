@@ -1,6 +1,7 @@
 "use client"
 import { TimelineContext } from "@/context/timelineContext";
 import React, { useContext } from "react";
+import { toast } from "react-toastify";
 
 const CheckInBtn = ({item, friend}) => {
   const {timeline, setTimeline} = useContext(TimelineContext);
@@ -17,6 +18,7 @@ const CheckInBtn = ({item, friend}) => {
       name: friend.name
     }
     setTimeline([...timeline, timelineObj])
+    toast.success(`${text} with ${friend.name}`)
   }
     console.log(timeline);
   return (

@@ -26,38 +26,42 @@ const StatsPage = () => {
   ];
   return (
     <div className="max-w-325  w-[95%] sm:w-10/12 mx-auto my-15">
-        <h1 className="text-5xl font-bold text-[#244D3F] mb-10">
-            Friendship Analytics
-        </h1>
+      <h1 className="text-5xl font-bold text-[#244D3F] mb-10">
+        Friendship Analytics
+      </h1>
       <div className="bg-white shadow-sm rounded-2xl p-5">
         <h2 className="text-xl font-medium text-[#244D3F]">
-            By Interaction Type
+          By Interaction Type
         </h2>
         <div className="flex justify-center items-center">
-          <PieChart
-            style={{
-              width: "100%",
-              maxWidth: "400px",
-              maxHeight: "70vh",
-              aspectRatio: 1,
-            }}
-            responsive
-          >
-            <Pie
-              data={data}
-              innerRadius="80%"
-              outerRadius="100%"
-              // Corner radius is the rounded edge of each pie slice
-              cornerRadius="50%"
-              fill="#8884d8"
-              // padding angle is the gap between each pie slice
-              paddingAngle={5}
-              dataKey="value"
-              isAnimationActive={true}
-            />
-            <Legend></Legend>
-            <Tooltip></Tooltip>
-          </PieChart>
+          {timeline.length === 0 ? (
+            <p className="font-semibold text-xl text-gray-400">No interaction logged yet</p>
+          ) : (
+            <PieChart
+              style={{
+                width: "100%",
+                maxWidth: "300px",
+                maxHeight: "60vh",
+                aspectRatio: 1,
+              }}
+              responsive
+            >
+              <Pie
+                data={data}
+                innerRadius="80%"
+                outerRadius="100%"
+                // Corner radius is the rounded edge of each pie slice
+                cornerRadius="50%"
+                fill="#8884d8"
+                // padding angle is the gap between each pie slice
+                paddingAngle={5}
+                dataKey="value"
+                isAnimationActive={true}
+              />
+              <Legend></Legend>
+              <Tooltip></Tooltip>
+            </PieChart>
+          )}
         </div>
       </div>
     </div>

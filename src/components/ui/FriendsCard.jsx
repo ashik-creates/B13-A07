@@ -6,12 +6,12 @@ const FriendsCard = ({ friend }) => {
     <Link href={`/friend/${friend.id}`}>
       <div className="py-10 px-5 w-full shadow-sm rounded-2xl bg-white transition-all ease-in-out duration-300 hover:-translate-y-1 cursor-pointer">
         <div className="text-center space-y-3">
-          <div className="w-16 h-16 rounded-full mx-auto">
+          <div className="w-20 h-20 rounded-full mx-auto">
             <Image
               src={friend.picture}
               alt={`Portrait of ${friend.name}`}
-              width={64}
-              height={64}
+              width={80}
+              height={80}
               className="w-full h-full rounded-full object-cover"
             ></Image>
           </div>

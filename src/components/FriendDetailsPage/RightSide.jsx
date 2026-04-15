@@ -6,12 +6,12 @@ const RightSide = ({friend}) => {
     <>
       <div className="py-10 px-1 min-[250px]px-5 w-full mx-auto sm:w-[70%] lg:w-full shadow-sm rounded-2xl bg-white">
         <div className="text-center space-y-3">
-          <div className="w-16 h-16 rounded-full mx-auto">
+          <div className="w-20 h-20 rounded-full mx-auto">
             <Image
               src={friend.picture}
               alt={`Portrait of ${friend.name}`}
-              width={64}
-              height={64}
+              width={80}
+              height={80}
               className="w-full h-full rounded-full object-cover"
             ></Image>
           </div>

@@ -24,8 +24,8 @@ const Navbar = () => {
   return (
     <nav className=" px-8 py-4 bg-white border-b border-gray-100 shadow-sm">
       <div className="w-[95%] flex flex-col sm:flex-row gap-5 sm:gap-0 items-center justify-between">
-        <h1 className="text-xl font-bold text-[#244D3F]">
-          Keen<span className="text-gray-500">Keeper</span>
+        <h1 className="text-2xl font-bold text-gray-700 ">
+          Keen<span className="text-[#244D3F]">Keeper</span>
         </h1>
 
         <div className="flex flex-wrap justify-center item gap-2 sm:gap-1">

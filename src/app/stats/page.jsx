@@ -20,27 +20,27 @@ const StatsPage = () => {
     }
   });
   const data = [
-    { name: "Call", value: call, fill: "#0088FE" },
-    { name: "Text", value: text, fill: "#00C49F" },
-    { name: "Video", value: video, fill: "#FFBB28" },
+    { name: "Text", value: text, fill: "#8B5CF6" }, 
+    { name: "Call", value: call, fill: "#1F2937" }, 
+    { name: "Video", value: video, fill: "#10B981" }, 
   ];
   return (
     <div className="max-w-325  w-[95%] sm:w-10/12 mx-auto my-15">
-      <h1 className="text-5xl font-bold text-[#244D3F] mb-10">
+      <h1 className="text-2xl sm:text-4xl font-bold text-[#244D3F] mb-10">
         Friendship Analytics
       </h1>
-      <div className="bg-white shadow-sm rounded-2xl p-5">
-        <h2 className="text-xl font-medium text-[#244D3F]">
+      <div className="bg-white shadow-sm rounded-2xl p-1 sm:p-5">
+        <h2 className="text-xl mb-6 text-center sm:text-start font-medium text-[#244D3F]">
           By Interaction Type
         </h2>
         <div className="flex justify-center items-center">
           {timeline.length === 0 ? (
-            <p className="font-semibold text-xl text-gray-400">No interaction logged yet</p>
+            <p className="font-semibold text-center text-xl text-gray-400">No interaction logged yet</p>
           ) : (
             <PieChart
               style={{
                 width: "100%",
-                maxWidth: "300px",
+                maxWidth: "320px",
                 maxHeight: "60vh",
                 aspectRatio: 1,
               }}
@@ -58,7 +58,7 @@ const StatsPage = () => {
                 dataKey="value"
                 isAnimationActive={true}
               />
-              <Legend></Legend>
+              <Legend iconType="circle" wrapperStyle={{ paddingTop: "30px" }}></Legend>
               <Tooltip></Tooltip>
             </PieChart>
           )}

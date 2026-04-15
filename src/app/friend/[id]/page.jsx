@@ -33,10 +33,10 @@ const FriendDetailsPage = async ({ params }) => {
 
   return (
     <div className="max-w-325  w-[95%] sm:w-10/12 mx-auto grid lg:grid-cols-3 my-10 gap-5">
-      <div className="col-span-1">
+      <div className="lg:col-span-1">
         <RightSide friend={friend}></RightSide>
       </div>
-      <div className="col-span-2">
+      <div className="lg:col-span-2">
         <div className="grid sm:grid-cols-3 gap-3">
           {rightTopCardItems.map((item, ind) => (
             <BannerCard key={ind} num={item.num} text={item.text}></BannerCard>

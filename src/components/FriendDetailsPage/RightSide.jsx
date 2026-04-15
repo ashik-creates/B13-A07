@@ -4,7 +4,7 @@ import { LuAlarmClock, LuArchive, LuTrash2 } from "react-icons/lu";
 const RightSide = ({friend}) => {
   return (
     <>
-      <div className="py-10 px-5 w-full shadow-sm rounded-2xl bg-white">
+      <div className="py-10 px-1 min-[250px]px-5 w-full mx-auto sm:w-[70%] lg:w-full shadow-sm rounded-2xl bg-white">
         <div className="text-center space-y-3">
           <div className="w-16 h-16 rounded-full mx-auto">
             <Image
@@ -35,19 +35,19 @@ const RightSide = ({friend}) => {
           <p className="text-center text-gray-500">{friend.email}</p>
         </div>
       </div>
-      <div className="py-5 space-y-3">
+      <div className="py-5 space-y-3 w-full mx-auto sm:w-[70%] lg:w-full">
         <button className="btn flex items-center justify-center gap-2 w-full bg-white rounded-lg text-gray-700 font-medium">
-          <LuAlarmClock className="text-lg" />
+          <LuAlarmClock className="text-sm sm:text-lg" />
           <span>Snooze 2 Weeks</span>
         </button>
 
         <button className="btn flex items-center justify-center gap-2 w-full bg-white  rounded-lg text-gray-700 font-medium ">
-          <LuArchive className="text-lg" />
+          <LuArchive className="text-sm sm:text-lg" />
           <span>Archive</span>
         </button>
 
         <button className="btn flex items-center justify-center gap-2 w-full  bg-white rounded-lg text-red-500 font-medium">
-          <LuTrash2 className="text-lg" />
+          <LuTrash2 className="text-sm sm:text-lg" />
           <span>Delete</span>
         </button>
       </div>

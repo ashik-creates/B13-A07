@@ -22,7 +22,7 @@ const CheckInBtn = ({item, friend}) => {
   }
     console.log(timeline);
   return (
-    <button onClick={()=> handleTimeline(item.label)} className="btn w-full h-auto flex flex-col p-6 bg-gray-100 shadow-sm rounded-2xl">
+    <button onClick={()=> handleTimeline(item.label)} className="btn w-full h-auto flex flex-col p-4 sm:p-6 bg-gray-100 shadow-sm rounded-2xl">
       <span className="text-2xl text-gray-500">{item.icon}</span>
 
       <p className="text-gray-500 font-medium">{item.label}</p>

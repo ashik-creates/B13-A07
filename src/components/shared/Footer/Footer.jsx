@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="max-w-325  w-[95%] sm:w-10/12 mx-auto">
         <div className="flex justify-center items-center text-center flex-col text-white gap-3">
           <h2 className="text-3xl sm:text-5xl font-bold">KeenKeeper</h2>
-          <p className="text-gray-300">
+          <p className="text-gray-300 text-center">
             Your personal shelf of meaningful connections. Browse, tend, and
             nurture the relationships that matter most.
           </p>

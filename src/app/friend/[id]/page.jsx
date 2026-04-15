@@ -32,35 +32,36 @@ const FriendDetailsPage = async ({ params }) => {
   ];
 
   return (
-    <div className="max-w-325  w-[95%] sm:w-10/12 mx-auto grid grid-cols-3 my-10 gap-5">
+    <div className="max-w-325  w-[95%] sm:w-10/12 mx-auto grid lg:grid-cols-3 my-10 gap-5">
       <div className="col-span-1">
         <RightSide friend={friend}></RightSide>
       </div>
       <div className="col-span-2">
-        <div className="grid grid-cols-3 gap-3">
+        <div className="grid sm:grid-cols-3 gap-3">
           {rightTopCardItems.map((item, ind) => (
             <BannerCard key={ind} num={item.num} text={item.text}></BannerCard>
           ))}
         </div>
-        <div className="p-6 shadow-sm rounded-xl mt-5">
-          <div>
-            <div className="flex justify-between items-center">
-              <h2 className="text-[#2d4a43] font-bold">Relationship Goal</h2>
-              <button className="btn">Edit</button>
-            </div>
-            <p className="text-gray-500">
+        <div className="p-4 sm:p-6 shadow-sm rounded-xl mt-5 flex flex-col min-[450px]:flex-row justify-between gap-5">
+          <div className="space-y-7">
+            <h2 className="text-[#2d4a43] font-bold text-center min-[450px]:text-start">Relationship Goal</h2>
+
+            <p className="text-gray-500 text-center min-[450px]:text-start">
               Connect every{" "}
               <span className="font-bold text-slate-800">
                 {friend.goal} days
               </span>
             </p>
           </div>
+          <button className="btn">Edit</button>
         </div>
         <div className="space-y-4 mt-6 p-5 shadow-sm bg-white rounded-2xl">
           <h2 className="text-[#2d4a43] font-bold text-lg">Quick Check-In</h2>
 
-          <div className="grid grid-cols-3 gap-4 ">
-            {checkInOptions.map((item, ind)=> <CheckInBtn key={ind} item={item} friend={friend}></CheckInBtn>)}
+          <div className="grid min-[450px]:grid-cols-3 gap-4 ">
+            {checkInOptions.map((item, ind) => (
+              <CheckInBtn key={ind} item={item} friend={friend}></CheckInBtn>
+            ))}
           </div>
         </div>
       </div>

@@ -58,7 +58,7 @@ const AllTimelineEntry = () => {
             onChange={handleFilter}
             className="w-full pl-4 pr-20 py-2 text-sm text-gray-600 bg-white border border-gray-200 rounded-lg shadow-sm cursor-pointer"
           >
-            <option value="" disabled hidden>Filter timeline</option>
+            <option className="text-gray-400" value="" disabled >Filter timeline</option>
             <option value="All">All</option>
             <option value="Call">Call</option>
             <option value="Text">Text</option>
@@ -71,7 +71,7 @@ const AllTimelineEntry = () => {
             onChange={handleSort}
             className="w-full pl-4 pr-10 py-2 text-sm text-gray-600 bg-white border border-gray-200 rounded-lg shadow-sm cursor-pointer"
           >
-            <option value="" disabled hidden>
+            <option className="text-gray-400" value="" disabled >
               Sort By
             </option>
             <option value="newest">Newest</option>
@@ -84,8 +84,7 @@ const AllTimelineEntry = () => {
             onChange={(e) => setSearchValue(e.target.value)}
             type="text"
             placeholder="Search friends..."
-            className="w-full px-4 py-1.5 border border-gray-300 
-            border-r-0
+            className="w-full px-4 py-1.5 bg-white border border-gray-300 
             rounded-lg rounded-r-0"
           />
         </div>

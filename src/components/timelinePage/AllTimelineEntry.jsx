@@ -5,9 +5,9 @@ import TimelineCard from "../ui/TimelineCard";
 
 const AllTimelineEntry = () => {
   const { timeline } = useContext(TimelineContext);
+
   const [filterValue, setFilterValue] = useState("");
   const [searchValue, setSearchValue] = useState("");
-
   const [sortValue, setSortValue] = useState("");
 
   const handleFilter = (e) => {
@@ -24,9 +24,7 @@ const AllTimelineEntry = () => {
     const searchedArray =
       item.text.toLowerCase().includes(searchLower) ||
       item.name.toLowerCase().includes(searchLower);
-    if (!searchedArray) {
-      return false;
-    } else {
+    if (searchedArray) {
       if (
         filterValue === "Call" ||
         filterValue === "Text" ||
@@ -37,6 +35,7 @@ const AllTimelineEntry = () => {
         return true;
       }
     }
+    return false;
   });
 
   const displaySortedOrFilteredTimeline = [...filteredTimeline].sort((a,b)=>{
@@ -84,8 +83,8 @@ const AllTimelineEntry = () => {
             onChange={(e) => setSearchValue(e.target.value)}
             type="text"
             placeholder="Search interactions..."
-            className="w-full px-4 py-1.5 bg-white border border-gray-300 
-            rounded-lg rounded-r-0"
+            className="w-full px-4 py-1.5 shadow-sm focus:shadow-md outline-none bg-white border border-gray-300 
+            rounded-lg"
           />
         </div>
       </div>

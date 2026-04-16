@@ -53,6 +53,7 @@ const AllTimelineEntry = () => {
       <div className="flex justify-start items-center gap-4 flex-wrap mt-5">
         <div className="max-w-60 ">
           <select
+            name="filter_1"
             defaultValue=""
             onChange={handleFilter}
             className="w-full pl-4 pr-12 sm:pr-20 py-2 text-sm text-gray-600 bg-white border border-gray-200 rounded-lg shadow-sm cursor-pointer"
@@ -66,6 +67,7 @@ const AllTimelineEntry = () => {
         </div>
         <div className="max-w-60 ">
           <select
+            name="filter_2"
             defaultValue=""
             onChange={handleSort}
             className="w-full pl-4 pr-8 sm:pr-10 py-2 text-sm text-gray-600 bg-white border border-gray-200 rounded-lg shadow-sm cursor-pointer"
@@ -79,6 +81,7 @@ const AllTimelineEntry = () => {
         </div>
         <div className="flex justify-center items-center">
           <input
+            name="search"
             value={searchValue}
             onChange={(e) => setSearchValue(e.target.value)}
             type="text"

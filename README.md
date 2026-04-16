@@ -1,36 +1,34 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Name: KeenKeeper
 
-## Getting Started
+Description: 
+KeenKeeper is a personal relationship management app that helps us stay connected to to the people and friends.It allows you to monitor connection also track interaction with your friends. It helps you to maintain meaningful relationship with your friends.
 
-First, run the development server:
+Technologies:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+This app is built on modern technologies. We used modern frameworks and libraries to maintain scalability and enhance performance. Technologies are...
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. Nextjs: Used as the main framework for building this app. It provides a powerful structure on top of React. It built on React which enable us to use component based coding for maintainability .
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+2. App router: We also used app based routing to enable fast page loading and optimizes performance.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+3. Tailwind CSS: Used for styling with a utility-first approach. It is used for clean and responsive design.
 
-## Learn More
+4. JavaScript (ES6+): Used for logic building and dynamic data loading.
 
-To learn more about Next.js, take a look at the following resources:
+5. DaisyUI: Provides pre-built components and help in rapid build.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+6. Recharts: Used for data visualization so that people can understand the core concept of the app. It is used here to represents the number of interactions.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+7. React-Toastify: Used for notifications when some action happened in the app.
 
-## Deploy on Vercel
+8. React-Icons: Used for icons in the app.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+9. JSON: Used for data source.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+3 Key Features: 
+
+1. Relationship Tracking System: This app track your relationship with your friends. It tracks your last interactions and categorizes them as on-track , almost due or overdue helping you to understand your relationship with them and what needs to be done according to the status.
+
+2. Interaction Timeline: View a history of your interactions with your friends. This helps you to understand your communication patterns and to maintain a meaningful relationship over time.
+
+3. Interactive stats and Modern UI: Visualize you interactions data on stats page using charts. It helps you to see your connection health. Also this app has modern UI design for top notch user experience and to navigate sections and pages easily.  

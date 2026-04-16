@@ -83,7 +83,7 @@ const AllTimelineEntry = () => {
             value={searchValue}
             onChange={(e) => setSearchValue(e.target.value)}
             type="text"
-            placeholder="Search friends..."
+            placeholder="Search interactions..."
             className="w-full px-4 py-1.5 bg-white border border-gray-300 
             rounded-lg rounded-r-0"
           />

@@ -42,11 +42,11 @@ const FriendDetailsPage = async ({ params }) => {
             <BannerCard key={ind} num={item.num} text={item.text}></BannerCard>
           ))}
         </div>
-        <div className="p-4 sm:p-6 shadow-sm rounded-xl mt-5 flex flex-col min-[450px]:flex-row justify-between gap-5">
+        <div className="p-4 sm:p-6 shadow-sm bg-white rounded-xl mt-5 flex flex-col min-[400px]:flex-row justify-between gap-5">
           <div className="space-y-7">
-            <h2 className="text-[#2d4a43] font-bold text-center min-[450px]:text-start">Relationship Goal</h2>
+            <h2 className="text-[#2d4a43] font-bold text-center min-[400px]:text-start">Relationship Goal</h2>
 
-            <p className="text-gray-500 text-center min-[450px]:text-start">
+            <p className="text-gray-500 text-center min-[400px]:text-start">
               Connect every{" "}
               <span className="font-bold text-slate-800">
                 {friend.goal} days

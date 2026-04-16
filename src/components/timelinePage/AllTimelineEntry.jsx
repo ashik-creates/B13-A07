@@ -52,11 +52,11 @@ const AllTimelineEntry = () => {
   return (
     <>
       <div className="flex justify-start items-center gap-4 flex-wrap mt-5">
-        <div className="max-w-70 ">
+        <div className="max-w-60 ">
           <select
             defaultValue=""
             onChange={handleFilter}
-            className="w-full pl-4 pr-20 py-2 text-sm text-gray-600 bg-white border border-gray-200 rounded-lg shadow-sm cursor-pointer"
+            className="w-full pl-4 pr-12 sm:pr-20 py-2 text-sm text-gray-600 bg-white border border-gray-200 rounded-lg shadow-sm cursor-pointer"
           >
             <option className="text-gray-400" value="" disabled >Filter timeline</option>
             <option value="All">All</option>
@@ -65,11 +65,11 @@ const AllTimelineEntry = () => {
             <option value="Video">Video</option>
           </select>
         </div>
-        <div className="max-w-70 ">
+        <div className="max-w-60 ">
           <select
             defaultValue=""
             onChange={handleSort}
-            className="w-full pl-4 pr-10 py-2 text-sm text-gray-600 bg-white border border-gray-200 rounded-lg shadow-sm cursor-pointer"
+            className="w-full pl-4 pr-8 sm:pr-10 py-2 text-sm text-gray-600 bg-white border border-gray-200 rounded-lg shadow-sm cursor-pointer"
           >
             <option className="text-gray-400" value="" disabled >
               Sort By

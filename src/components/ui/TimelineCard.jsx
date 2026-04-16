@@ -9,8 +9,8 @@ const TimelineCard = ({item}) => {
     <div className="py-5 px-3 bg-white mb-5 flex justify-start items-center gap-4 shadow-sm rounded-2xl">
       <Image src={item.text === "Text"? textImg : item.text === "Call" ? callImg : videoImg} alt={`${item.text} logo`} height={30} width={30}></Image>
       <div>
-        <p><span className="text-lg text-[#244D3F] font-medium">{item.text}</span> with {item.name}</p>
-        <p>{item.date}</p>
+        <p className="text-gray-600 text-lg"><span className=" text-[#244D3F] font-semibold">{item.text}</span> with {item.name}</p>
+        <p className="text-gray-600">{item.date}</p>
       </div>
     </div>
   );
